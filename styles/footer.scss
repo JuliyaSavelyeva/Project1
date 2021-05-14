@@ -1,0 +1,93 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: auto;
+}
+
+.footer-navigation {
+  display: flex;
+  height: 338px;
+  width: 1140px;
+  margin: auto;
+}
+
+.about-company {
+  margin-top: 43px;
+  &__description {
+    width: 360px;
+    line-height: 26px;
+    font-size: 18px;
+    color: rgba(43, 41, 45, 0.6);
+    margin-top: 26px;
+    margin-bottom: 25px;
+  }
+
+  &__downloads_app-store {
+    margin-right: 10px;
+  }
+}
+
+.additional-navigation {
+  margin-top: 60px;
+  margin-left: auto;
+  display: flex;
+
+  &__column {
+    margin-right: 29px;
+  }
+}
+
+.nav-links {
+  width: 265px;
+
+  &__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2b292d;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 18px;
+    padding: 0;
+
+    &_item {
+      font-size: 18px;
+      line-height: 30px;
+      color: rgba(43, 41, 45, 0.6);
+    }
+  }
+}
+
+.footer-line {
+  background-color: #2b292d;
+  height: 1px;
+  opacity: 0.1;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 1140px;
+  margin: auto;
+}
+
+.footer-terms__item {
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+  margin-right: 22px;
+}
+
+.social-links {
+  margin-left: auto;
+
+  &__item {
+    margin-left: 20px;
+    text-decoration: none;
+  }
+}
