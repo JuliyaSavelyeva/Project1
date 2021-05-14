@@ -18,24 +18,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <img
-          class="logo__image"
-          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
-          alt="logo"
-        />
-        <span class="logo__name">Foundation</span>
-        <span class="logo__description">Startup landing template</span>
+    <div class="page">
+      <div class="top-section">
+        <header class="header">
+          <div class="logo">
+            <img
+              class="logo__image"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
+              alt="logo"
+            />
+            <div>
+              <div class="logo__name">Foundation</div>
+              <div class="logo__description">Startup landing template</div>
+            </div>
+          </div>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__item_link nav-list__item_link-selected" href="#">Home</a>
+              </li>
+              <li class="nav-list__item"><a class="nav-list__item_link" href="#">Stories</a></li>
+              <li class="nav-list__item">
+                <a class="nav-list__item_link" href="#">Library</a
+                ><i class="nav-list__item-arrow"></i>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-button">Get Started</button>
+        </header>
       </div>
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-list__item">Home</li>
-          <li class="nav-list__item">Stories</li>
-          <li class="nav-list__item">Library</li>
-        </ul>
-      </nav>
-      <button class="header-button">Get Started</button>
-    </header>
+    </div>
   </body>
 </html>

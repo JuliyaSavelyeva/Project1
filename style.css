@@ -1,9 +1,99 @@
+.top-section {
+  background-color: #f3c6bd;
+  padding-top: 39px;
+}
+
+.header {
+  width: 1140px;
+  height: 62px;
+  margin: auto;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__image {
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+}
+.logo__name {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.logo__description {
+  font-size: 18px;
+  line-height: 25px;
+  color: #2b292d;
+  opacity: 0.6;
+}
+
+.navigation {
+  margin-left: auto;
+  margin-right: 75px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 7px;
+}
+.nav-list__item {
+  margin-right: 50px;
+}
+.nav-list__item:last-child {
+  margin-right: 0;
+  position: relative;
+}
+.nav-list__item_link {
+  display: block;
+  line-height: 100%;
+  line-height: 25px;
+  font-size: 18px;
+  color: #2b292d;
+  text-decoration: none;
+}
+.nav-list__item_link-selected {
+  font-weight: 700;
+}
+.nav-list__item-arrow {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 71px;
+}
+
+.header-button {
+  width: 160px;
+  height: 48px;
+  background-color: #3040c4;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
   font-family: "Work Sans", sans-serif;
+}
+
+.page {
+  width: 1400px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
