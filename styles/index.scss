@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'header';
+@import 'headline';
 @import 'footer';
 
 * {
@@ -8,12 +9,26 @@
 
 html {
   font-family: 'Work Sans', sans-serif;
+  color: $text-color-primary;
 }
 
 .page {
+  position: relative;
   width: 1400px;
   margin: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.action-button {
+  width: 160px;
+  height: 48px;
+  background-color: #3040c4;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  outline: none;
 }
