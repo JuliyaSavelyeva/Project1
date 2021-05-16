@@ -16,16 +16,20 @@ html {
 }
 
 .page {
-  position: relative;
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+
+  @include more-400 {
+    position: relative;
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .action-button {
-  width: 160px;
   height: 48px;
   background-color: #3040c4;
   font-size: 18px;
@@ -34,4 +38,8 @@ html {
   border: none;
   border-radius: 2px;
   outline: none;
+
+  @include more-400 {
+    width: 160px;
+  }
 }

@@ -1,1 +1,9 @@
 $text-color-primary: #2b292d;
+
+$breakpoint: 400px;
+
+@mixin more-400 {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

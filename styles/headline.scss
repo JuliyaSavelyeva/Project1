@@ -1,44 +1,68 @@
 .headline {
-  width: 1140px;
-  margin: auto;
-  margin-top: 76px;
+  width: 100%;
+
+  @include more-400 {
+    width: 1140px;
+    margin: auto;
+    margin-top: 76px;
+  }
 
   &__title {
     margin: 0;
-    width: 754px;
-    height: 165px;
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 78px;
-    letter-spacing: -0.5px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.3125px;
+
+    @include more-400 {
+      width: 754px;
+      height: 165px;
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+    }
   }
 
   &__description {
-    margin-top: 34px;
+    margin-top: 24px;
     margin-bottom: 0;
-    width: 456px;
-    height: 102px;
     font-size: 24px;
     line-height: 34px;
+
+    @include more-400 {
+      margin-top: 34px;
+      width: 456px;
+      height: 102px;
+    }
   }
 
   &__banner {
-    position: absolute;
-    z-index: 0;
-    top: 185px;
-    right: 25px;
-    width: 796px;
-    height: 448px;
+    width: 100%;
+    margin-bottom: 36px;
+
+    @include more-400 {
+      position: absolute;
+      z-index: 0;
+      top: 185px;
+      right: 25px;
+      width: 796px;
+      height: 448px;
+    }
   }
 
   &__buttons {
-    display: flex;
-    margin-top: 58px;
-    margin-bottom: 126px;
+    margin-top: 30px;
+
+    @include more-400 {
+      display: flex;
+      margin-top: 58px;
+      margin-bottom: 126px;
+    }
 
     &-learn-more {
-      margin-left: 10px;
-      width: 158px;
+      margin-top: 15px;
+      margin-left: 0;
+      width: 100%;
       height: 48px;
       background-color: #fff;
       font-size: 18px;
@@ -47,11 +71,26 @@
       border: none;
       border-radius: 2px;
       outline: none;
+
+      @include more-400 {
+        margin-top: 0;
+        margin-left: 10px;
+        width: 158px;
+      }
+    }
+
+    &_action-button {
+      width: 100%;
     }
   }
 }
 
 .headline-left {
-  position: relative;
-  z-index: 1;
+  padding: 35px 15px 33px 15px;
+
+  @include more-400 {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+  }
 }
