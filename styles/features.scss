@@ -1,6 +1,10 @@
 .features-wrapper {
-  display: flex;
-  position: relative;
+  display: none;
+
+  @include more-400 {
+    display: flex;
+    position: relative;
+  }
 }
 
 .features__img-left {

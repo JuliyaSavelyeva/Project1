@@ -1,16 +1,31 @@
 .about {
   width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 77px 130px 76px;
+  padding: 46px 15px;
   background-color: #f4f5f7;
+
+  @include more-400 {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 77px 130px 76px;
+  }
 }
 
 .article {
-  width: 555px;
   font-size: 22px;
   line-height: 32px;
+
+  @include more-400 {
+    width: 555px;
+  }
+
+  &:last-child {
+    margin-top: 20px;
+
+    @include more-400 {
+      margin-top: 0;
+    }
+  }
 
   &__title {
     font-weight: bold;
