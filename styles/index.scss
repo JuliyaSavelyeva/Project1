@@ -7,6 +7,8 @@
 @import 'customers';
 @import 'tips';
 @import 'features';
+@import 'order';
+@import 'audiences';
 
 * {
   box-sizing: border-box;
@@ -19,11 +21,10 @@ html {
 
 .page {
   width: 100%;
-  overflow-x: hidden;
 
   @include more-400 {
     position: relative;
-    width: 1400px;
+    max-width: 1400px;
     margin: auto;
     min-height: 100vh;
     display: flex;
