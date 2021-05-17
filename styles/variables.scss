@@ -1,16 +1,6 @@
 $text-color-primary: #2b292d;
+$text-color-green: #009b4d;
+$text-color-light-grey: #2b292d99;
+$background-color-grey: #f4f5f7;
 
-$breakpoint: 400px;
-$breakpoint-less: 399px;
 
-@mixin more-400 {
-  @media screen and (min-width: $breakpoint) {
-    @content;
-  }
-}
-
-@mixin less-400 {
-  @media screen and (max-width: $breakpoint-less) {
-    @content;
-  }
-}

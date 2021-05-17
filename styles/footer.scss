@@ -3,6 +3,14 @@
   flex-direction: column;
   background-color: #fff;
   margin-top: auto;
+
+  .logo {
+    display: none;
+  
+    @include more-400 {
+      display: flex;
+    }
+  }
 }
 
 .footer-navigation {
@@ -33,7 +41,7 @@
       width: 360px;
       line-height: 26px;
       font-size: 18px;
-      color: rgba(43, 41, 45, 0.6);
+      color: $text-color-light-grey;
     }
   }
 
@@ -82,7 +90,6 @@
     font-weight: bold;
     font-size: 22px;
     line-height: 28px;
-    color: #2b292d;
   }
 
   &__list {
@@ -94,14 +101,14 @@
     &_item {
       font-size: 18px;
       line-height: 30px;
-      color: rgba(43, 41, 45, 0.6);
+      color: $text-color-light-grey;
     }
   }
 }
 
 .footer-line {
   margin-top: 40px;
-  background-color: #2b292d;
+  background-color: $text-color-primary;
   height: 1px;
   opacity: 0.1;
 
@@ -131,7 +138,7 @@
 
   &__item {
     text-decoration: none;
-    color: rgba(43, 41, 45, 0.6);
+    color: $text-color-light-grey;
     margin-right: 22px;
   }
 }
@@ -153,14 +160,6 @@
     @include more-400 {
       margin-left: 20px;
     }
-  }
-}
-
-.footer .logo {
-  display: none;
-
-  @include more-400 {
-    display: flex;
   }
 }
 
@@ -188,6 +187,6 @@
 
   &__description {
     font-size: 18px;
-    color: rgba(43, 41, 45, 0.6);
+    color: $text-color-light-grey;
   }
 }

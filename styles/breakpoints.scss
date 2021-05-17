@@ -1,0 +1,13 @@
+$breakpoint: 1400px;
+
+@mixin more-400 {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin less-400 {
+  @media screen and (max-width: $breakpoint - 1) {
+    @content;
+  }
+}
