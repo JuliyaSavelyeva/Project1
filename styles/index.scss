@@ -34,10 +34,10 @@ html {
 
 .action-button {
   height: 48px;
-  background-color: #3040c4;
+  background-color: $background-color-blue-button;
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: $text-color-white;
   border: none;
   border-radius: 2px;
   outline: none;
@@ -45,6 +45,17 @@ html {
   @include more-400 {
     width: 160px;
   }
+}
+
+.learn-more {
+  height: 48px;
+  background-color: $background-color-white;
+  font-size: 18px;
+  font-weight: 700;
+  color: $text-color-blue-button;
+  border: none;
+  border-radius: 2px;
+  outline: none;
 }
 
 .desctop-hidden {

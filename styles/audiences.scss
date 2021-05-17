@@ -1,0 +1,137 @@
+.audiences {
+  background-color: $background-color-light-blue;
+  padding: 50px 15px;
+
+  @include more-400 {
+    padding: 108px 0 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    margin: 0;
+    margin-top: 17px;
+
+    @include more-400 {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+      margin-top: 24px auto 0;
+      width: 555px;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0;
+    margin-top: 18px;
+
+    @include more-400 {
+      margin-top: 30px;
+      width: 555px;
+    }
+  }
+
+  &__buttons {
+    @include more-400 {
+      display: flex;
+      margin-top: 34px;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+
+    @include more-400 {
+      width: 160px;
+      margin-top: 0;
+      margin-right: 10px;
+    }
+  }
+
+  &__button-learn-more {
+    margin-top: 12px;
+    display: block;
+    width: 100%;
+
+    @include more-400 {
+      margin-top: 0;
+      width: 158px;
+    }
+  }
+
+  &__items {
+    margin: 0;
+    margin-top: 40px;
+
+    @include more-400 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 111px;
+      width: 1139px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: $background-color-white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease;
+
+    @include more-400 {
+      width: 262px;
+    }
+
+    &:last-child {
+      @include more-400 {
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+      background-color: $background-color-blue;
+    }
+
+    &:hover .audiences__caption {
+      color: $text-color-white;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    margin-top: 22px;
+  }
+
+  &__caption {
+    margin-top: 22px;
+    margin-bottom: 33px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}

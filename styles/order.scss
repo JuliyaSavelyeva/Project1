@@ -10,14 +10,19 @@
   }
 
   &__details {
-    max-width: 555px;
+    @include more-400 {
+      max-width: 555px;
+    }
   }
 
   &__illustration {
     max-width: 200px;
+    display: block;
+    margin: auto;
 
     @include more-400 {
       max-width: 269px;
+      margin: 0;
       margin-right: 121px;
     }
   }
