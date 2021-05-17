@@ -44,3 +44,15 @@ html {
     width: 160px;
   }
 }
+
+.desctop-hidden {
+  @include more-400 {
+    display: none;
+  }
+}
+
+.mobile-hidden {
+  @include less-400 {
+    display: none;
+  }
+}

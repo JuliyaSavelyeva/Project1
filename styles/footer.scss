@@ -6,35 +6,71 @@
 }
 
 .footer-navigation {
+  margin: 0;
   display: flex;
-  height: 338px;
-  width: 1140px;
-  margin: auto;
+  flex-direction: column;
+
+  @include more-400 {
+    height: 338px;
+    width: 1140px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
 }
 
 .about-company {
-  margin-top: 43px;
-  &__description {
-    width: 360px;
-    line-height: 26px;
-    font-size: 18px;
-    color: rgba(43, 41, 45, 0.6);
-    margin-top: 26px;
-    margin-bottom: 25px;
+  margin: 43px 15px 0;
+
+  @include more-400 {
+    margin: 26px 0 25px;
   }
 
-  &__downloads_app-store {
+  &__description {
+    display: none;
+
+    @include more-400 {
+      display: block;
+      width: 360px;
+      line-height: 26px;
+      font-size: 18px;
+      color: rgba(43, 41, 45, 0.6);
+    }
+  }
+
+  &__downloads {
+    margin-top: 31px;
+    display: flex;
+    justify-content: center;
+
+    @include more-400 {
+      justify-content: left;
+      margin-top: 0;
+    }
+  }
+
+  &__downloads-app-store {
     margin-right: 10px;
   }
 }
 
 .additional-navigation {
-  margin-top: 60px;
-  margin-left: auto;
+  margin: 30px 15px 0;
   display: flex;
+  flex-direction: column;
+
+  @include more-400 {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 0;
+  }
 
   &__column {
-    margin-right: 29px;
+    margin-bottom: 30px;
+
+    @include more-400 {
+      margin-right: 29px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -64,30 +100,94 @@
 }
 
 .footer-line {
+  margin-top: 40px;
   background-color: #2b292d;
   height: 1px;
   opacity: 0.1;
+
+  @include more-400 {
+    margin-top: 0;
+  }
 }
 
 .footer-links {
   display: flex;
-  align-items: center;
-  height: 50px;
-  width: 1140px;
-  margin: auto;
+  margin-top: 30px;
+  margin-left: 15px;
+  flex-direction: column;
+
+  @include more-400 {
+    flex-direction: row;
+    width: 1140px;
+    margin: auto;
+    align-items: center;
+    height: 50px;
+  }
 }
 
-.footer-terms__item {
-  text-decoration: none;
-  color: rgba(43, 41, 45, 0.6);
-  margin-right: 22px;
+.footer-terms {
+  font-size: 14px;
+  line-height: 22px;
+
+  &__item {
+    text-decoration: none;
+    color: rgba(43, 41, 45, 0.6);
+    margin-right: 22px;
+  }
 }
 
 .social-links {
-  margin-left: auto;
+  margin-top: 31px;
+  margin-bottom: 23px;
+
+  @include more-400 {
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   &__item {
-    margin-left: 20px;
+    margin-right: 20px;
     text-decoration: none;
+
+    @include more-400 {
+      margin-left: 20px;
+    }
+  }
+}
+
+.footer .logo {
+  display: none;
+
+  @include more-400 {
+    display: flex;
+  }
+}
+
+.logo-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include more-400 {
+    display: none;
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__description {
+    font-size: 18px;
+    color: rgba(43, 41, 45, 0.6);
   }
 }
