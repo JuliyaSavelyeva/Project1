@@ -570,18 +570,16 @@
 .features__img-left {
   position: absolute;
   top: 258px;
-}
-
-.features__img-right {
-  position: absolute;
-  right: 0;
-  top: 5px;
+  height: 166px;
 }
 
 .features {
   width: 1140px;
   margin: auto;
   display: flex;
+}
+.features__left {
+  width: 459px;
 }
 .features__subtitle {
   font-weight: 700;
@@ -609,7 +607,7 @@
   align-items: center;
   margin-top: 42px;
 }
-.features__new-customers_title {
+.features__new-customers-title {
   margin: 0;
   margin-left: 15px;
   font-weight: 700;
@@ -632,19 +630,17 @@
   border-bottom: 1px solid #2b292d26;
   padding-bottom: 22px;
 }
-.features__advantages_text {
+.features__advantages-text {
   margin-left: 15px;
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
 }
 
-.features__left {
-  width: 459px;
-}
-
-.features__img-left {
-  height: 166px;
+.features__img-right {
+  position: absolute;
+  right: 0;
+  top: 5px;
 }
 
 .order {
@@ -738,26 +734,26 @@
   color: #3142c6;
 }
 
-.audiences {
+.audience {
   background-color: #00a1c612;
   padding: 50px 15px;
 }
 @media screen and (min-width: 1400px) {
-  .audiences {
+  .audience {
     padding: 108px 0 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-.audiences__subtitle {
+.audience__subtitle {
   display: block;
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
   text-align: center;
 }
-.audiences__title {
+.audience__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
@@ -767,7 +763,7 @@
   margin-top: 17px;
 }
 @media screen and (min-width: 1400px) {
-  .audiences__title {
+  .audience__title {
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -0.5px;
@@ -775,7 +771,7 @@
     width: 555px;
   }
 }
-.audiences__description {
+.audience__description {
   font-size: 24px;
   line-height: 34px;
   text-align: center;
@@ -783,53 +779,53 @@
   margin-top: 18px;
 }
 @media screen and (min-width: 1400px) {
-  .audiences__description {
+  .audience__description {
     margin-top: 30px;
     width: 555px;
   }
 }
 @media screen and (min-width: 1400px) {
-  .audiences__buttons {
+  .audience__buttons {
     display: flex;
     margin-top: 34px;
   }
 }
-.audiences__button {
+.audience__button {
   display: block;
   width: 100%;
   margin-top: 30px;
 }
 @media screen and (min-width: 1400px) {
-  .audiences__button {
+  .audience__button {
     width: 160px;
     margin-top: 0;
     margin-right: 10px;
   }
 }
-.audiences__button-learn-more {
+.audience__button-learn-more {
   margin-top: 12px;
   display: block;
   width: 100%;
 }
 @media screen and (min-width: 1400px) {
-  .audiences__button-learn-more {
+  .audience__button-learn-more {
     margin-top: 0;
     width: 158px;
   }
 }
-.audiences__items {
+.audience__items {
   margin: 0;
   margin-top: 40px;
 }
 @media screen and (min-width: 1400px) {
-  .audiences__items {
+  .audience__items {
     display: flex;
     justify-content: space-between;
     margin-top: 111px;
     width: 1139px;
   }
 }
-.audiences__item {
+.audience__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -842,27 +838,27 @@
   cursor: pointer;
 }
 @media screen and (min-width: 1400px) {
-  .audiences__item {
+  .audience__item {
     width: 262px;
   }
 }
 @media screen and (min-width: 1400px) {
-  .audiences__item:last-child {
+  .audience__item:last-child {
     margin-right: 0;
   }
 }
-.audiences__item:hover {
+.audience__item:hover {
   box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
   background-color: #3141c5;
 }
-.audiences__item:hover .audiences__caption {
+.audience__item:hover .audiences__caption {
   color: #ffffff;
 }
-.audiences__image {
+.audience__image {
   max-width: 100%;
   margin-top: 22px;
 }
-.audiences__caption {
+.audience__caption {
   margin-top: 22px;
   margin-bottom: 33px;
   font-weight: 700;

@@ -27,8 +27,8 @@
     justify-content: center;
     width: 107px;
     height: 94px;
-    border-bottom: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid $border-color-light-grey;
+    border-right: 1px solid $border-color-light-grey;
     flex: 1;
 
     &:last-child {
