@@ -30,7 +30,7 @@
       font-size: 56px;
       line-height: 56px;
       letter-spacing: -0.5px;
-      margin-top: 24px auto 0;
+      margin: 24px auto 0;
       width: 555px;
     }
   }
@@ -78,6 +78,10 @@
     }
   }
 
+  .learn-more {
+    color: $text-color-black;
+  }
+
   &__items {
     margin: 0;
     margin-top: 40px;
@@ -105,6 +109,7 @@
 
     @include more-400 {
       width: 262px;
+      margin-top: 0;
     }
 
     &:last-child {
