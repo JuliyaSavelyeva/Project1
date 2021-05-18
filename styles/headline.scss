@@ -1,3 +1,13 @@
+.headline-left {
+  padding: 0 15px 33px 15px;
+
+  @include more-400 {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+  }
+}
+
 .headline {
   width: 100%;
 
@@ -74,15 +84,5 @@
     &_action-button {
       width: 100%;
     }
-  }
-}
-
-.headline-left {
-  padding: 35px 15px 33px 15px;
-
-  @include more-400 {
-    position: relative;
-    z-index: 1;
-    padding: 0;
   }
 }
